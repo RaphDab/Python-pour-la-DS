@@ -7,6 +7,11 @@ Ce projet se divise en trois grandes parties:
 - création d'un algorithme de trading.
 
 ## Partie I : Entraînement et test d'un modèle de NLP
+### A - Entraînement d'un modèle de NLP sur le dataset IMDb
+
 
 
 ## Partie II : Entraînement et test d'un modèle de prédiction du cours de l'action de Apple
+
+
+### Partie III : Création d'un algorithme de trading reprenant les deux parties précédentes
