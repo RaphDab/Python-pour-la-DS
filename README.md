@@ -24,6 +24,9 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 
 ## Partie II : Entraînement et test d'un modèle de prédiction du cours de l'action de Apple
 
+Dans cette deuxième grande partie, nous cherchons à entraîner un modèle à prédire le prix de l'action APPL. Pour ce faire, nous récupérons des données du site de Yahoo Finance et nous comparons les performances de 3 modèles : un modèle de **Naive Forecasting**, un modèle de **Moving Average** (deux modèles très simples) et un modèle plus compliqué à base de **LSTMs**. À nouveau, l'objectif n'est pas d'utiliser un modèle complexe à tout prix mais bien de comparer les performances de ces trois modèles et de garder celui qui est le plus fiable.
 
 
 ### Partie III : Création d'un algorithme de trading reprenant les deux parties précédentes
+
+Cette ultime étape vise à regrouper le travail effectué dans les deux parties précédentes pour offrir à l'utilisateur une "interface" dédiée à notre algorithme de trading. Nous demandons à l'utilisateur de rentrer la date du jour puis d'exécuter notre fichier. À la fin de ce dernier, après avoir récupéré les articles de presse et les posts Reddit correspondants aux 48 heures avant cette date et avoir fait tourné notre modèle de prédiction du cours de l'action AAPL, nous indiquons à notre utilisateur s'il doit ou non acheter une action AAPL en ce jour.
