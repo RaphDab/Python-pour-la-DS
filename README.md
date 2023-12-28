@@ -7,6 +7,9 @@ Ce projet se divise en trois grandes parties:
 - création d'un algorithme de trading.
 
 ## Partie I : Entraînement et test d'un modèle de NLP
+
+L'objectif général de cette partie est de récupérer diverses sources d'information parlant des actaulités récentes de Apple, puis à l'aide du meilleur modèle de NLP possible, en déduire si les nouvelles autour de Apple sont bonnes ou non. Cela donnerait un premier feu vert pour l'algorithme de trading.
+
 ### A - Entraînement d'un modèle de NLP sur le dataset IMDb (Training.ipynb)
 
   L'idée est de comparer trois approches différentes pour construire un modèle d'analyse de sentiments de A à Z. On teste dans un premier temps deux approches plutôt classiques : une **régression logistique** et un **Random Forest** fine-tunés. Par la suite, on essaie une approche basée sur des réseaux neuronaux complexes avec les **LSTMs** (Long Short-Term Memory) particulièrement adaptés à ce genre de tâches.
@@ -40,7 +43,8 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 
   Enfin, nous récupérons des articles Reddit en relation avec l'actualité de l'entreprise Apple et procédons à des étapes similaires à celles réalisées en B. Nous nettoyons ces articles et procédons à nouveau à des statistiques descriptives poussées. L'objectif est de diversifier les sources d'informations de notre algorithme de trading pour obtenir les résultats les plus justes possibles.
 
-**Récupération et traitement des données** : Utilisation de l’API Reddit pour récupérer les posts récents en rapport avec l’entreprise Apple. Pré-traitement des données récupérées et nettoyage avant de les faire analyser par notre modèle d’analyse de sentiments.
+**Récupération et traitement des données** : Utilisation de l’API Reddit pour récupérer les posts récents en rapport avec l’entreprise Apple. 
+Pré-traitement des données récupérées et nettoyage avant de les faire analyser par notre modèle d’analyse de sentiments.
 
 **Analyse descriptive et représentation graphique** : 
 
@@ -48,11 +52,15 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 
 ## Partie II : Entraînement et test d'un modèle de prédiction du cours de l'action de Apple
 
-Dans cette deuxième grande partie, nous cherchons à entraîner un modèle à prédire le prix de l'action APPL. Pour ce faire, nous récupérons des données du site de Yahoo Finance et nous comparons les performances de 3 modèles : un modèle de **Naive Forecasting**, un modèle de **Moving Average** (deux modèles très simples) et un modèle plus compliqué à base de **LSTMs**. À nouveau, l'objectif n'est pas d'utiliser un modèle complexe à tout prix mais bien de comparer les performances de ces trois modèles et de garder celui qui est le plus fiable.
+Dans cette deuxième grande partie, nous cherchons à entraîner un modèle à prédire le prix de l'action AAPL. L'objectif final étant, grâce au meilleure modèle possible, prédire la valeur du lendemain de l'action (par rapport à la date d'execution du programme), et ainsi voir si elle va augmenter ou diminuer.
+Si la valeur augmente, alors il s'agit du deuxième feu vert pour l'achat d'action, en plus des "bonnes nouvelles" dans la presse et sur Reddit concernant Apple.
 
-**Récupération et traitement des données** : Récupération des données financières du cours de l’action Apple via Yahoo Finance, organisation des données récupérées pour créer des ensembles d’entraînement, de validation et de test pour entraîner un modèle LSTM.
+Pour ce faire, nous récupérons des données du site de Yahoo Finance et nous comparons les performances de 3 modèles : un modèle de **Naive Forecasting**, un modèle de **Moving Average** (deux modèles très simples) et un modèle plus compliqué à base de **LSTMs**. À nouveau, l'objectif n'est pas d'utiliser un modèle complexe à tout prix mais bien de comparer les performances de ces trois modèles et de garder celui qui est le plus fiable.
 
-**Analyse descriptive et représentation graphique** : Représentation des fluctuations du cours de l'action AAPL (à l'ouverture par rapport à la fermeture du marché, volume de transactions ou encore en comparant les valeurs les plus hautes et les plus basses atteintes dans la journée). Comparaison des performances des différents modèles utilisés entre eux et par rapport aux variations réelles du cours de l'action. Analyse graphiques des performances de notre modèle LSTM.
+**Récupération et traitement des données** : Récupération des données financières du cours de l’action Apple via Yahoo Finance, nettoyage si nécessaire, organisation des données récupérées pour créer des ensembles d’entraînement, de validation et de test pour entraîner un modèle LSTM.
+
+**Analyse descriptive et représentation graphique** : Représentation des fluctuations du cours de l'action AAPL (à l'ouverture par rapport à la fermeture du marché, volume de transactions ou encore en comparant les valeurs les plus hautes et les plus basses atteintes dans la journée). 
+Comparaison des performances des différents modèles utilisés entre eux et par rapport aux variations réelles du cours de l'action. Analyse graphiques des performances de notre modèle LSTM.
 
 **Modélisation** : Comparaison des performances de trois modèles différents : moving average, naive forecasting et LSTM.
 
