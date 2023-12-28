@@ -15,10 +15,14 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 
 **Récupération et traitement des données** : Récupération des données du dataset IMDb, nettoyage, ré-agencement et ajout de colonnes du fichier CSV pour entraîner les modèles de régression logistique et de Random Forest. Pour la partie LSTM, étapes de nettoyage du texte, tokenisation et padding des séquences.
 
-**Analyse descriptive et représentation graphique** :
+**Analyse descriptive et représentation graphique** : 
+- Analyse descriptive du dataset IMDb (répartition des labels, distribution de la longueur des critiques, mots les plus fréquents (wordcloud), recherche de corrélation entre longueur des critiques et sentiment exprimé)).
+- Suivi des performances des trois modèles entraînés : Régression logistique (matrice de confusion), Random Forest (matrice de confusion, graphique de suivi des performances selon le nombre d'arbres, graphique mettant en lumière le lien entre le temps d'entraînement et le nombre d'arbres sélectionné), LSTM (analyse supplémentaire du dataset avant les étapes de tokenisation et padding, suivi de l'évolution de la métrique "accuracy" sur les 10 époques d'entraînement et analyse de celle-ci pour fine-tuning, confrontation des performances de chaque version du modèle).
 
-**Modélisation** :
-
+**Modélisation** : Test et comparaison de trois modèles distincts 
+-Régression logistique : modèle simple, adapté à des problèmes binaires et facilement interprétable; sert de modèle de référence dans l'entraînement des modèles suivants. 
+- Random Forest : capable de capturer des dépendances non-linéaires entre les données, a tendance à bien généraliser à de nouvelles données.
+- LSTMs: parfaitement adaptés à la gestion de séquence de données et donc aux tâches de type NLP, leur mémoire à long terme leur permet d'interpréter des longues séquences de texte et d'en saisir les dépendances à longue échelle. Permet de comparer les performances d'un modèle assez complexe à celles d'une simple régression logistique.
 
 ### B - Test du modèle sur des articles de presse récupérés via NewsAPI (Analyse_de_sentiments.ipynb)
 
