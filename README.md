@@ -20,9 +20,9 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 - Suivi des performances des trois modèles entraînés : Régression logistique (matrice de confusion), Random Forest (matrice de confusion, graphique de suivi des performances selon le nombre d'arbres, graphique mettant en lumière le lien entre le temps d'entraînement et le nombre d'arbres sélectionné), LSTM (analyse supplémentaire du dataset avant les étapes de tokenisation et padding, suivi de l'évolution de la métrique "accuracy" sur les 10 époques d'entraînement et analyse de celle-ci pour fine-tuning, confrontation des performances de chaque version du modèle).
 
 **Modélisation** : Test et comparaison de trois modèles distincts 
--Régression logistique : modèle simple, adapté à des problèmes binaires et facilement interprétable; sert de modèle de référence dans l'entraînement des modèles suivants. 
-- Random Forest : capable de capturer des dépendances non-linéaires entre les données, a tendance à bien généraliser à de nouvelles données.
-- LSTMs: parfaitement adaptés à la gestion de séquence de données et donc aux tâches de type NLP, leur mémoire à long terme leur permet d'interpréter des longues séquences de texte et d'en saisir les dépendances à longue échelle. Permet de comparer les performances d'un modèle assez complexe à celles d'une simple régression logistique.
+- ***Régression logistique*** : modèle simple, adapté à des problèmes binaires et facilement interprétable; sert de modèle de référence dans l'entraînement des modèles suivants. 
+- ***Random Forest*** : capable de capturer des dépendances non-linéaires entre les données, a tendance à bien généraliser à de nouvelles données.
+- ***LSTMs***: parfaitement adaptés à la gestion de séquence de données et donc aux tâches de type NLP, leur mémoire à long terme leur permet d'interpréter des longues séquences de texte et d'en saisir les dépendances à longue échelle. Permet de comparer les performances d'un modèle assez complexe à celles d'une simple régression logistique.
 
 ### B - Test du modèle sur des articles de presse récupérés via NewsAPI (Analyse_de_sentiments.ipynb)
 
@@ -30,9 +30,11 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 
 **Récupération et traitement des données** : Utilisation de l’API NewsAPI pour récupérer des articles de presse en rapport avec Apple. Analyse de la structure HTML de leur site web pour repérer les balises contenant le cœur de l’article. Récupération des titres, descriptions et contenus des articles pour les préparer à être traités par un modèle d’analyse de sentiments.
 
-Analyse descriptive et représentation graphique :
+**Analyse descriptive et représentation graphique** : Statistiques descriptives sur la longueur des articles et la longueur de leurs attributs (titre, description) et affichage d'un bubble chart pour comprendre les potentielles corrélations entre ces deux dernières. Affichage des mots les plus fréquents, mise en évidence de stopwords et suppression de ces derniers.
 
-Modélisation :
+**Modélisation** : Test du modèle entraîné précédemment sur le corpus d'articles récupérés. Conclusion.
+
+
 
 ### C - Analyse de sentiments sur des posts extraits de Reddit (Post_Reddit.ipynb)
 
@@ -40,9 +42,9 @@ Modélisation :
 
 **Récupération et traitement des données** : Utilisation de l’API Reddit pour récupérer les posts récents en rapport avec l’entreprise Apple. Pré-traitement des données récupérées et nettoyage avant de les faire analyser par notre modèle d’analyse de sentiments.
 
-Analyse descriptive et représentation graphique :
+**Analyse descriptive et représentation graphique** : 
 
-Modélisation :
+
 
 ## Partie II : Entraînement et test d'un modèle de prédiction du cours de l'action de Apple
 
@@ -50,9 +52,9 @@ Dans cette deuxième grande partie, nous cherchons à entraîner un modèle à p
 
 **Récupération et traitement des données** : Récupération des données financières du cours de l’action Apple via Yahoo Finance, organisation des données récupérées pour créer des ensembles d’entraînement, de validation et de test pour entraîner un modèle LSTM.
 
-Analyse descriptive et représentation graphique :
+**Analyse descriptive et représentation graphique** :
 
-Modélisation :
+**Modélisation** :
 
 ## Partie III : Création d'un algorithme de trading reprenant les deux parties précédentes
 
