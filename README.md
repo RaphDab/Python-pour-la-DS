@@ -1,5 +1,6 @@
-# Python-pour-la-DS
-Algorithme de trading mélangeant prédiction de la valeur d'actions et analyse de sentiments sur des articles de nouvelles financières concernant l'entreprise Apple.
+# **Titre: Algorithme de trading sur l'action AAPL basé sur de la prédiction de séries temporelles et du NLP**
+
+**Problématique : Quelle est l'efficacité relative des réseaux de neurones profonds par rapport aux méthodes d'apprentissage machine traditionnelles et à quel point leurs prédictions sont-elles assez satisfaisantes pour les intégrer à notre algorithme de trading ?**
 
 Ce projet se divise en trois grandes parties:
 - entraînement et test d'un modèle de NLP
