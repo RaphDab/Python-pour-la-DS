@@ -13,19 +13,42 @@ Ce projet se divise en trois grandes parties:
   Sans à priori à première vue, nous souhaitons tester par nous-mêmes à quel point un modèle simple peut rivaliser avec des LSTMs même fine-tunés.
 Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du projet.
 
+**Récupération et traitement des données** : Récupération des données du dataset IMDb, nettoyage, ré-agencement et ajout de colonnes du fichier CSV pour entraîner les modèles de régression logistique et de Random Forest. Pour la partie LSTM, étapes de nettoyage du texte, tokenisation et padding des séquences.
+
+**Analyse descriptive et représentation graphique** :
+
+**Modélisation** :
+
+
 ### B - Test du modèle sur des articles de presse récupérés via NewsAPI (Analyse_de_sentiments.ipynb)
 
   Dans cette partie, nous récupérons, nettoyons et analysons des articles de presse tirés du site Forbes.com et en relation avec l'actualité de Apple. Nous réalisons une série de statistiques descriptives sur ces articles afin d'en comprendre les spécificités. Enfin, nous testons notre modèle entraîné en A sur ces articles et nous comparons ses prédictions à celles d'un modèle Transformers extrêmement performant.
+
+Récupération et traitement des données :
+
+Analyse descriptive et représentation graphique :
+
+Modélisation :
 
 ### C - Analyse de sentiments sur des posts extraits de Reddit (Post_Reddit.ipynb)
 
   Enfin, nous récupérons des articles Reddit en relation avec l'actualité de l'entreprise Apple et procédons à des étapes similaires à celles réalisées en B. Nous nettoyons ces articles et procédons à nouveau à des statistiques descriptives poussées. L'objectif est de diversifier les sources d'informations de notre algorithme de trading pour obtenir les résultats les plus justes possibles.
 
+Récupération et traitement des données :
+
+Analyse descriptive et représentation graphique :
+
+Modélisation :
 
 ## Partie II : Entraînement et test d'un modèle de prédiction du cours de l'action de Apple
 
 Dans cette deuxième grande partie, nous cherchons à entraîner un modèle à prédire le prix de l'action APPL. Pour ce faire, nous récupérons des données du site de Yahoo Finance et nous comparons les performances de 3 modèles : un modèle de **Naive Forecasting**, un modèle de **Moving Average** (deux modèles très simples) et un modèle plus compliqué à base de **LSTMs**. À nouveau, l'objectif n'est pas d'utiliser un modèle complexe à tout prix mais bien de comparer les performances de ces trois modèles et de garder celui qui est le plus fiable.
 
+Récupération et traitement des données :
+
+Analyse descriptive et représentation graphique :
+
+Modélisation :
 
 ## Partie III : Création d'un algorithme de trading reprenant les deux parties précédentes
 
