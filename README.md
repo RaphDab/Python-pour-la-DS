@@ -52,9 +52,9 @@ Dans cette deuxième grande partie, nous cherchons à entraîner un modèle à p
 
 **Récupération et traitement des données** : Récupération des données financières du cours de l’action Apple via Yahoo Finance, organisation des données récupérées pour créer des ensembles d’entraînement, de validation et de test pour entraîner un modèle LSTM.
 
-**Analyse descriptive et représentation graphique** :
+**Analyse descriptive et représentation graphique** : Représentation des fluctuations du cours de l'action AAPL (à l'ouverture par rapport à la fermeture du marché, volume de transactions ou encore en comparant les valeurs les plus hautes et les plus basses atteintes dans la journée). Comparaison des performances des différents modèles utilisés entre eux et par rapport aux variations réelles du cours de l'action. Analyse graphiques des performances de notre modèle LSTM.
 
-**Modélisation** :
+**Modélisation** : Comparaison des performances de trois modèles différents : moving average, naive forecasting et LSTM.
 
 ## Partie III : Création d'un algorithme de trading reprenant les deux parties précédentes
 
