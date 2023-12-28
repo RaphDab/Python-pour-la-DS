@@ -24,7 +24,7 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 
   Dans cette partie, nous récupérons, nettoyons et analysons des articles de presse tirés du site Forbes.com et en relation avec l'actualité de Apple. Nous réalisons une série de statistiques descriptives sur ces articles afin d'en comprendre les spécificités. Enfin, nous testons notre modèle entraîné en A sur ces articles et nous comparons ses prédictions à celles d'un modèle Transformers extrêmement performant.
 
-Récupération et traitement des données :
+**Récupération et traitement des données** : Utilisation de l’API NewsAPI pour récupérer des articles de presse en rapport avec Apple. Analyse de la structure HTML de leur site web pour repérer les balises contenant le cœur de l’article. Récupération des titres, descriptions et contenus des articles pour les préparer à être traités par un modèle d’analyse de sentiments.
 
 Analyse descriptive et représentation graphique :
 
@@ -34,7 +34,7 @@ Modélisation :
 
   Enfin, nous récupérons des articles Reddit en relation avec l'actualité de l'entreprise Apple et procédons à des étapes similaires à celles réalisées en B. Nous nettoyons ces articles et procédons à nouveau à des statistiques descriptives poussées. L'objectif est de diversifier les sources d'informations de notre algorithme de trading pour obtenir les résultats les plus justes possibles.
 
-Récupération et traitement des données :
+**Récupération et traitement des données** : Utilisation de l’API Reddit pour récupérer les posts récents en rapport avec l’entreprise Apple. Pré-traitement des données récupérées et nettoyage avant de les faire analyser par notre modèle d’analyse de sentiments.
 
 Analyse descriptive et représentation graphique :
 
@@ -44,7 +44,7 @@ Modélisation :
 
 Dans cette deuxième grande partie, nous cherchons à entraîner un modèle à prédire le prix de l'action APPL. Pour ce faire, nous récupérons des données du site de Yahoo Finance et nous comparons les performances de 3 modèles : un modèle de **Naive Forecasting**, un modèle de **Moving Average** (deux modèles très simples) et un modèle plus compliqué à base de **LSTMs**. À nouveau, l'objectif n'est pas d'utiliser un modèle complexe à tout prix mais bien de comparer les performances de ces trois modèles et de garder celui qui est le plus fiable.
 
-Récupération et traitement des données :
+**Récupération et traitement des données** : Récupération des données financières du cours de l’action Apple via Yahoo Finance, organisation des données récupérées pour créer des ensembles d’entraînement, de validation et de test pour entraîner un modèle LSTM.
 
 Analyse descriptive et représentation graphique :
 
