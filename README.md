@@ -28,7 +28,7 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 - ***Random Forest*** : capable de capturer des dépendances non-linéaires entre les données, a tendance à bien généraliser à de nouvelles données.
 - ***LSTMs***: parfaitement adaptés à la gestion de séquence de données et donc aux tâches de type NLP, leur mémoire à long terme leur permet d'interpréter des longues séquences de texte et d'en saisir les dépendances à longue échelle. Permet de comparer les performances d'un modèle assez complexe à celles d'une simple régression logistique.
 
-### B - Test du modèle sur des articles de presse récupérés via NewsAPI (Analyse_de_sentiments.ipynb)
+### B - Test du modèle sur des articles de presse récupérés via NewsAPI (PressArticles.ipynb)
 
   Dans cette partie, nous récupérons, nettoyons et analysons des articles de presse tirés du site Forbes.com et en relation avec l'actualité de Apple. Nous réalisons une série de statistiques descriptives sur ces articles afin d'en comprendre les spécificités. Enfin, nous testons notre modèle entraîné en A sur ces articles et nous comparons ses prédictions à celles d'un modèle Transformers extrêmement performant.
 
@@ -40,7 +40,7 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 
 
 
-### C - Analyse de sentiments sur des posts extraits de Reddit (Post_Reddit.ipynb)
+### C - Analyse de sentiments sur des posts extraits de Reddit (RedditPosts.ipynb)
 
   Enfin, nous récupérons des articles Reddit en relation avec l'actualité de l'entreprise Apple et procédons à des étapes similaires à celles réalisées en B. Nous nettoyons ces articles et procédons à nouveau à des statistiques descriptives poussées. L'objectif est de diversifier les sources d'informations de notre algorithme de trading pour obtenir les résultats les plus justes possibles.
 
@@ -51,7 +51,7 @@ Pré-traitement des données récupérées et nettoyage avant de les faire analy
 
 
 
-## Partie II : Entraînement et test d'un modèle de prédiction du cours de l'action de Apple
+## Partie II : Entraînement et test d'un modèle de prédiction du cours de l'action de Apple (StockPredictions)
 
 Dans cette deuxième grande partie, nous cherchons à entraîner un modèle à prédire le prix de l'action AAPL. L'objectif final étant, grâce au meilleure modèle possible, prédire la valeur du lendemain de l'action (par rapport à la date d'execution du programme), et ainsi voir si elle va augmenter ou diminuer.
 Si la valeur augmente, alors il s'agit du deuxième feu vert pour l'achat d'action, en plus des "bonnes nouvelles" dans la presse et sur Reddit concernant Apple.
@@ -65,6 +65,6 @@ Comparaison des performances des différents modèles utilisés entre eux et par
 
 **Modélisation** : Comparaison des performances de trois modèles différents : moving average, naive forecasting et LSTM.
 
-## Partie III : Création d'un algorithme de trading reprenant les deux parties précédentes
+## Partie III : Création d'un algorithme de trading reprenant les deux parties précédentes (Trading_Algorithm)
 
 Cette ultime étape vise à regrouper le travail effectué dans les deux parties précédentes pour offrir à l'utilisateur une "interface" dédiée à notre algorithme de trading. Nous demandons à l'utilisateur de rentrer la date du jour puis d'exécuter notre fichier. À la fin de ce dernier, après avoir récupéré les articles de presse et les posts Reddit correspondants aux 48 heures avant cette date et avoir fait tourné notre modèle de prédiction du cours de l'action AAPL, nous indiquons à notre utilisateur s'il doit ou non acheter une action AAPL en ce jour.
