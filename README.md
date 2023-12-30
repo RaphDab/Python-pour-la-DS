@@ -9,7 +9,7 @@ Ce projet se divise en trois grandes parties:
 
 ## Partie I : Entraînement et test d'un modèle de NLP
 
-L'objectif général de cette partie est de récupérer diverses sources d'information parlant des actaulités récentes de Apple, puis à l'aide du meilleur modèle de NLP possible, en déduire si les nouvelles autour de Apple sont bonnes ou non. Cela donnerait un premier feu vert pour l'algorithme de trading.
+L'objectif général de cette partie est de récupérer diverses sources d'information parlant des actualités récentes de Apple, puis à l'aide du meilleur modèle de NLP possible, en déduire si les nouvelles autour de Apple sont bonnes ou non. Cela donnerait un premier feu vert pour l'algorithme de trading.
 
 ### A - Entraînement d'un modèle de NLP sur le dataset IMDb (Training.ipynb)
 
