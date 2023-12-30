@@ -9,3 +9,5 @@ pour observer le choix du modèle qui va être utilisé pour prédire le cours d
 Enfin, TrainingAlgo.ipynb est le projet final.
 Après avoir choisi les modèles les plus performants pour l'analyse des sentiments et la prédiction des séries temporelles,
 il s'agit de les appliquer à la date du jour. Si toutes les parties sont d'accord pour dire qu'il faut acheter, alors seulement il est conseillé d'acheter.
+
+Bonne lecture !
