@@ -1,0 +1,11 @@
+Nous vous proposons de lire ce projet dans l'ordre montré par le README.
+
+Dans un premier temps, nous vous conseillons de lire Training.ipynb pour voir la démarche d'entraînement du modèle d'analyse de sentiments,
+qui est par la suite testé avec des articles de presse (PressArticles.ipynb) et avec des posts Reddit (Reddit.ipynb)
+
+Ensuite, nous vous incitons à poursuivre par la seconde partie sur la prédiction de séries temporelles (AAPL Stock Predictions.ipynb) 
+pour observer le choix du modèle qui va être utilisé pour prédire le cours des actions dans la dernière partie.
+
+Enfin, TrainingAlgo.ipynb est le projet final.
+Après avoir choisi les modèles les plus performants pour l'analyse des sentiments et la prédiction des séries temporelles,
+il s'agit de les appliquer à la date du jour. Si toutes les parties sont d'accord pour dire qu'il faut acheter, alors seulement il est conseillé d'acheter.
