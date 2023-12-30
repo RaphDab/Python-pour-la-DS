@@ -47,7 +47,10 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 **Récupération et traitement des données** : Utilisation de l’API Reddit pour récupérer les posts récents en rapport avec l’entreprise Apple. 
 Pré-traitement des données récupérées et nettoyage avant de les faire analyser par notre modèle d’analyse de sentiments.
 
-**Analyse descriptive et représentation graphique** : 
+**Analyse descriptive et représentation graphique** : Représentation graphique du nombre de post écrits dans le temps et lien avec le cours d'Apple.
+Création d'un dataframe regroupant les auteurs des posts et représentation graphique de la contribution de chaque auteur.
+Statistiques descriptives relatives à l'occurence des mots utilisés dans les posts, puis représentation graphique sur les mots les plus utilisés du dataframe.
+
 
 
 
