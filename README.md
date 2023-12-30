@@ -65,6 +65,8 @@ Comparaison des performances des différents modèles utilisés entre eux et par
 
 **Modélisation** : Comparaison des performances de trois modèles différents : moving average, naive forecasting et LSTM.
 
+**Pistes d'amélioration :** 
+
 ## Partie III : Création d'un algorithme de trading reprenant les deux parties précédentes (Trading_Algorithm)
 
 Cette ultime étape vise à regrouper le travail effectué dans les deux parties précédentes pour offrir à l'utilisateur une "interface" dédiée à notre algorithme de trading. Nous demandons à l'utilisateur de rentrer la date du jour puis d'exécuter notre fichier. À la fin de ce dernier, après avoir récupéré les articles de presse et les posts Reddit correspondants aux 48 heures avant cette date et avoir fait tourné notre modèle de prédiction du cours de l'action AAPL, nous indiquons à notre utilisateur s'il doit ou non acheter une action AAPL en ce jour.
