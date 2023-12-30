@@ -28,6 +28,8 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 - ***Random Forest*** : capable de capturer des dépendances non-linéaires entre les données, a tendance à bien généraliser à de nouvelles données.
 - ***LSTMs***: parfaitement adaptés à la gestion de séquence de données et donc aux tâches de type NLP, leur mémoire à long terme leur permet d'interpréter des longues séquences de texte et d'en saisir les dépendances à longue échelle. Permet de comparer les performances d'un modèle assez complexe à celles d'une simple régression logistique.
 
+**Pistes d'amélioration** : Dans cette partie, nous aurions pu davantage fine-tuner nos paramètres pour chacun des modèles entraînés. Nous avons fait le choix de ne pas modifier outre mesure les hyper-paramètres de la régression logistique afin de montrer qu’un modèle simple pouvait être très efficace ici. Nous aurions également pu essayer d’entraîner davantage le modèle de Random Forest mais les résultats peu satisfaisants de celui-ci à premier abord ne laisser pas présager d’amélioration significative possible. Toutefois, en ce qui concerne la partie LSTM, il aurait été nécessaire de passer plus de temps sur la réduction de l’overfitting : la modification du taux de dropout, de la taille du batch-size ou encore l’introduction d’une régularisation L1 ou L2 auraient pu bénéficier à notre modèle.
+
 ### B - Test du modèle sur des articles de presse récupérés via NewsAPI (PressArticles.ipynb)
 
   Dans cette partie, nous récupérons, nettoyons et analysons des articles de presse tirés du site Forbes.com et en relation avec l'actualité de Apple. Nous réalisons une série de statistiques descriptives sur ces articles afin d'en comprendre les spécificités. Enfin, nous testons notre modèle entraîné en A sur ces articles et nous comparons ses prédictions à celles d'un modèle Transformers extrêmement performant.
@@ -65,7 +67,7 @@ Comparaison des performances des différents modèles utilisés entre eux et par
 
 **Modélisation** : Comparaison des performances de trois modèles différents : moving average, naive forecasting et LSTM.
 
-**Pistes d'amélioration :** 
+**Pistes d'amélioration :** Dans cette partie, il aurait pu être intéressant de travailler un peu plus en profondeur sur un modèle de machine learning, en éviter de tomber dans de la redite de la première partie, afin que le modèle a utiliser à la fin soit autre chose que le naive forecasting. Bien que notre travail cherche aussi à montrer que parfois les modèles simples sont les plus efficaces. On aurait pu également chercher à diversifier nos sources sur les actions, ou sinon chercher à les obtenir de manière plus complexe avec du webscraping à la place de l'utilisation de la bibliothèque toute faite yfinance. Enfin, nous avions pensé à comparer le cours des actions d'Apple avec le cours du Nasdaq pour apporter en plus à la partie d'analyse descriptive.
 
 ## Partie III : Création d'un algorithme de trading reprenant les deux parties précédentes (Trading_Algorithm)
 
