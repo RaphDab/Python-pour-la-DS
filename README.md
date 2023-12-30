@@ -14,7 +14,7 @@ L'objectif général de cette partie est de récupérer diverses sources d'infor
 ### A - Entraînement d'un modèle de NLP sur le dataset IMDb (Training.ipynb)
 
   L'idée est de comparer trois approches différentes pour construire un modèle d'analyse de sentiments de A à Z. On teste dans un premier temps deux approches plutôt classiques : une **régression logistique** et un **Random Forest** fine-tunés. Par la suite, on essaie une approche basée sur des réseaux neuronaux complexes avec les **LSTMs** (Long Short-Term Memory) particulièrement adaptés à ce genre de tâches.
-  A priori, nous souhaitons tester par nous-mêmes à quel point un modèle simple peut rivaliser avec des LSTMs même fine-tunés.
+  Nous souhaitons tester par nous-mêmes à quel point un modèle simple peut rivaliser avec des LSTMs même fine-tunés.
 Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du projet.
 
 **Récupération et traitement des données** : Récupération des données du dataset IMDb, nettoyage, ré-agencement et ajout de colonnes du fichier CSV pour entraîner les modèles de régression logistique et de Random Forest. Pour la partie LSTM, étapes de nettoyage du texte, tokenisation et padding des séquences.
