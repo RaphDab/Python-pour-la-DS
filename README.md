@@ -44,17 +44,12 @@ Nous sélectionnerons le modèle qui offre le plus de garanties pour la suite du
 
   Enfin, nous récupérons des articles Reddit en relation avec l'actualité de l'entreprise Apple et procédons à des étapes similaires à celles réalisées en B. Nous nettoyons ces articles et procédons à nouveau à des statistiques descriptives poussées. L'objectif est de diversifier les sources d'informations de notre algorithme de trading pour obtenir les résultats les plus justes possibles.
 
-**Récupération et traitement des données** : Utilisation de l’API Reddit pour récupérer les posts récents en rapport avec l’entreprise Apple. 
-
-Pré-traitement des données récupérées et nettoyage avant de les faire analyser par notre modèle d’analyse de sentiments.
+**Récupération et traitement des données** : Utilisation de l’API Reddit pour récupérer les posts récents en rapport avec l’entreprise Apple.  
+  Pré-traitement des données récupérées et nettoyage avant de les faire analyser par notre modèle d’analyse de sentiments.
 
 **Analyse descriptive et représentation graphique** : Représentation graphique du nombre de post écrits dans le temps et lien avec le cours d'Apple.
-
-Création d'un dataframe regroupant les auteurs des posts et représentation graphique de la contribution de chaque auteur.
-
-Statistiques descriptives relatives à l'occurence des mots utilisés dans les posts, puis représentation graphique sur les mots les plus utilisés du dataframe.
-
-
+  Création d'un dataframe regroupant les auteurs des posts et représentation graphique de la contribution de chaque auteur.
+    Statistiques descriptives relatives à l'occurence des mots utilisés dans les posts, puis représentation graphique sur les mots les plus utilisés du dataframe.
 
 
 ## Partie II : Entraînement et test d'un modèle de prédiction du cours de l'action de Apple (StockPredictions)
